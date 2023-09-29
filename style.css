@@ -1,0 +1,211 @@
+@font-face {
+    font-family: gameCube;
+    src:url(./fonts/GamecubenDualset-L85D.ttf);
+}
+@font-face {
+    font-family: marvinVision;
+    src:url(./fonts/MarvinVisionsBig-Bold.otf);
+}
+
+.header {
+    background: #18122B;
+    color: #635985;
+    padding: 15px 20px 20px;
+    max-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    font-size: large;
+    font-weight: bold;
+}
+
+.left-text {
+    font-size: 25px;
+}
+
+.right-text {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.right-text img {
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    border-radius: 50%;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.right-text img:hover {
+    background: var(--color);
+    color: white;
+    box-shadow: 0 0 5px var(--color),
+        0 0 25px var(--color),
+        0 0 50px var(--color),
+        0 0 200px var(--color);
+}
+
+.container {
+    max-height: 900px;
+}
+
+.main-container {
+    height: 590px;
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round {
+    font-family: marvinVision;
+    font-size: 60px;
+    color: #18122B;
+    margin: 60px;
+}
+
+.fight-header {
+    height: 70px;
+    width: 510px;
+    font-family: gameCube;
+    font-size: 30px;
+    color: #18122B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.match-icon {
+    margin: 10px;
+    padding-top: 0;
+    width: 500px;
+    color: #18122B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.winLoseMessage {
+    margin: 0;
+    font-family: marvinVision;
+    font-size: 20px;
+}
+
+.user-image,
+.cpu-image {
+    margin: 0;
+    height: 115px;
+    width: auto;
+    padding: 20px;
+    background: #443C68;
+    border: 5px solid #18122B;
+    border-radius: 25%;
+}
+
+.scores {
+    margin-top: 40px;
+    height: 50px;
+    width: 500px;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    font-weight: 900;
+    font-size: 35px;
+    color: #18122B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resetScore button{
+    width: 90px;
+    padding: 2px 8px;
+    font-family: gameCube;
+    font-size: 13px;
+    color: #18122B;
+    background: none;
+    border: 2px solid;
+    line-height: 1.5;
+
+}
+
+.resetScore:hover,
+.resetScore:focus {
+    transition: .6s;
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.RNP-container {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.RNP-header {
+    background: #393053;
+    width: 40%;
+    font-family: gameCube;
+    font-size: 33px;
+    color: #18122B;
+    padding: 10px 0;
+    text-align: center;
+}
+.RNP-choices {
+    height: 165px;
+    background: #443C68;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.RNP-choices button,
+.btnRock,
+.btnPaper,
+.btnScissors {
+    --button: #443C68;
+    --button-hover: #443C68;
+    --button-active:  #443C68;
+    --button-visited: #443C68;
+    --button-colour: #18122B;
+    --button-border: #443C68;
+}
+
+.RNP-choices button {
+    color: var(--button-colour);
+    transition: all 0.3s ease-in-out;
+    background: var(--button);
+    border: 5px solid var(--button-border);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px var(--button-colour);
+}
+
+.RNP-choices button:hover {
+    text-decoration: underline;
+    background: var(--button-hover);
+    box-shadow: inset 0 0 0 10px var(--button-colour);
+}
+
+.RNP-choices button:active {
+    background: var(--button-active);
+}
+
+.RNP-choices button:visited {
+    background: var(--button-visited);
+}
+
+.RNP-choices img {
+    height: 90px;
+    width: auto;
+    padding: 20px;
+}
+
+body {
+    background: #635985;
+    margin: auto;
+}
+
